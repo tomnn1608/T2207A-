@@ -1,16 +1,17 @@
 h1{
-    color: #ff0000;
+    color: #000000;
+    text-align: center;
 }
-p{
-    color: #008000;
-    font-size: 16px;
-    font-family: sans-serif;
-    font-weight: 400 ; /* đậm nhạt */
-    line-height: 1.5; /* chiều cao của mỗi dòng chữ */
-    text-decoration: none;/* underline line-through overline*/
-    text-align: left;/* left right center justify căn lề*/
-    text-transform: none;/* uppercase lowercase capitalize in hoa in thường*/
-    font-style: italic; /* in nghiêng */
-    background-color: bisque; /* nền */
-    width: 500px;
+h2{text-align: center;
+   color: red;
 }
+h3{text-align: center;}
+h4{ font-weight:unset;width:300px;text-align: center;
+}
+
+p1{text-align: center;
+}  h5{font-weight:unset;width:300px;}
+h6{font-style:italic; font-size: 16px;}
+p{text-align: center;width:300px;}
+
+h8{text-align: right;}
