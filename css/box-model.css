@@ -1,0 +1,69 @@
+div{
+    width : calc(25%-30px);
+    /*height:400px;*/
+    float:left;
+    border: 1px solid red; /*dotted , solid , dashed */
+    /* border-left:
+       border-top:
+       boder-right:
+       boder-bottom:
+     */
+    margin: 10px 15px;
+    /* margin-top:
+       margin-right:
+       margin-left:
+       margin_bottom:
+     */
+   padding: 10px 15px;
+     /* padding-top:
+        padding-right:
+        padding-left:
+        padding-bottom:
+      */
+    box-sizing:border-box;
+     box-shadow:0px 0px 5px #dcdcdc;
+     boder-radius: 6px;
+     transition: all 300ms;
+}
+div:hover{
+    transform: rotate(45deg);
+    transform: scalee(1.15);
+}
+img{
+    max-width: 100%;
+}
+#box-6{
+    background-color: #9aa0a6;
+}
+.box-orange{
+    background-color: orange;
+}
+.box-special{
+    color: green;
+    background-color: bisque;
+}
+/* danh sach uu tien */
+body .dp #pid{
+    color:aquamarine;
+}
+#pid{
+    color: deepskyblue;
+}
+.dp .pc{
+    color:yellow;
+}
+div .pc{
+    color: blue;
+}
+.pc{
+    color:red
+}
+body div p{
+    color: pink;
+}
+div p{
+    color: blueviolet;
+}
+p{
+    color: #222222;
+}
