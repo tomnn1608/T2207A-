@@ -1,0 +1,21 @@
+h1{font-size: xxx-large;
+}
+h2{
+    border-bottom: 1px solid black;
+}
+h3{
+    text-decoration: underline;
+}
+h4{
+    font-family: sans-serif;
+    line-height: 0.5;
+    font-size: 13px;
+}
+div {
+    float: right;
+}
+p{
+    font-family: sans-serif;
+    line-height: 0.5;
+    font-size: 13px;
+}
