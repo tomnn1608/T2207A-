@@ -13,7 +13,16 @@ input[type=][name=]{
 .one-col .content{
     width: 100%;
 }
-under{
-
+p .under{
+    padding-right: 110px;
+    color: #5f6368;
 }
+.contact{
+    background-color: green ;
+    color: #dddddd;
+}
+*{
+    padding-bottom: 10px;
+}
+
 
