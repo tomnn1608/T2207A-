@@ -1,17 +1,21 @@
 
-    var mins = 10;
-    var sec = 59;
-    var thoigianchay = setInterval(function(){
-    if(sec < 0 ){
-    if(mins <=0){
-    clearInterval(thoigianchay);
-    document.getElementById("demnguoc").innerHTML = "Finished";
+var m = 10,s=0;
+function timer() {
+    var min= document.getElementById("min");
+    var sec= document.getElementById("sec");
+    min.innerText = m;
+    sec.innerText = s;
+    s--;
+    if(s<0){
+        s=59;
+        m--;
+    }if(m<0){
+        clearInterval(si);
+    }
 }
-    mins -=1;
-    sec = 59;
-} else {
-    document.getElementById("demnguoc").innerHTML = mins + "m "+ sec+"s";
-    sec -= 1;
-}
-}, 1000);
-
+var si;
+function startTimer(){
+    if(m>0) {
+        si = setInterval(timer, 10);
+    }
+    }
