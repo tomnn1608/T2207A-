@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo5</title>
+    <link rel="stylesheet" href="css/demo5.css"/>
+</head>
+<body>
+    <header class="content">Menu</header>
+    <div id="menu"></div>
+    <script type="text/javascript">
+        function getMenu (){
+            var xhttp = new XMLHttpRequest();
+            xhttp.onload = function (){
+                var data = JSON.parse(this.responseText);
+                var ls = data.data;
+                for(var i=0;i<ls.length;i++){
+                    /// 1 object
+                    var li_html = `<div class="container"><img  width="100%" src="${ls[i].image}" <div>${ls[i].name}</br><div>${ls[i].price}$</div></div>`;
+                    var menu = document.getElementById("menu");
+                    menu.innerHTML += li_html;
+                }
+            }
+            var url = "https://foodgroup.herokuapp.com/api/today-special";
+            xhttp.open("GET",url,true);
+            xhttp.send();
+        }
+        getMenu();
+</script>
+
+</body>
+</html>
