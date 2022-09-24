@@ -22,10 +22,12 @@
             var li_html=`<div class="col-3">
                 <div class="card mb-3 mt-1">
                     <div class="card-body">
-                        <h5 class="card-title">${ls[i].dx_txt}</h5>
-                        <p class="card-text">${ls[i].temp}</p>
-                        <a href="#" class="btn btn-primary">${ls[i].description}</a>
-                        <img src="https://openweathermap.org/img/wn/${ls[i].icon}n@2x.png" class="card-img-top" alt="...">
+                        <h5 class="card-title">${ls[i].dt_txt}</h5>
+                        <p class="card-text">${ls[i].main.temp}</p>
+
+                            <a href="#" class="btn btn-primary">${ls[j].description}</a>
+                            <img src="https://openweathermap.org/img/wn/${ls[j].icon}n@2x.png" class="card-img-top" alt="...">
+
                 </div>
             </div>
         </div>`;
