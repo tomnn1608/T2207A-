@@ -14,28 +14,29 @@
     </div>
 </section>
 <script type="text/javascript">
-  var xhttp = new XMLHttpRequest();
-  xhttp.onload = function (){
-    var data = JSON.parse(this.responseText);
-    var ls = data.data;
-    for (var i = 0; i<ls.length;i++){
-        var li_html=`<div class="col-3">
+    var xhttp = new XMLHttpRequest();
+    xhttp.onload = function () {
+        var list = JSON.parse(this.responseText);
+        var ls = list.list;
+        for (var i = 0; i < ls.length; i++) {
+            var li_html = `<div class="col-3" xmlns="http://www.w3.org/1999/html>
                 <div class="card mb-3 mt-1">
-                    <img src="${ls[i].image}" class="card-img-top" alt="...">
+                    <img src="http://openweathermap.org/img/wn/${ls[i].weather[0].icon}@2x.png" style="float: right"
+                             alt="..."/>
                     <div class="card-body">
-                        <h5 class="card-title">${ls[i].name}</h5>
-                        <p class="card-text">${ls[i].description}</p>
-                        <a href="#" class="btn btn-primary">${ls[i].price}</a>
+                        <h5 class="card-title">${ls[i].dt_txt}</h5>
+                        <p class="card-text">${ls[i].weather[0].description}</p>
+                        <a>${ls[i].main.temp}<sup>o</sup>C</a>
                 </div>
             </div>
         </div>`;
-        var ds = document.getElementById("ls");
-        ds.innerHTML += li_html;
+            var ds = document.getElementById("ls");
+            ds.innerHTML += li_html;
+        }
     }
-  }
-  var url = "https://foodgroup.herokuapp.com/api/today-special";
-  xhttp.open("GET",url,true);
-  xhttp.send();
+    var url = "https://api.openweathermap.org/data/2.5/forecast?q=Hanoi&appid=09a71427c59d38d6a34f89b47d75975c&units=metric";
+    xhttp.open("GET", url, true);
+    xhttp.send();
 </script>
 </body>
 </html>
