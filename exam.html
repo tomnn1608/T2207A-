@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -7,35 +7,40 @@
     <link rel="stylesheet" href="css/exam.css"/>
 </head>
 <body>
-<div class="container">
-    <div class="exam">
-        <div class="exam2">
-            <nav class="formCtlBlock">
-                <a class="logim"><span>Login</span></a>
-                <a class="regsister"><span>register</span></a>
-            </nav>
+<div class="baoquat">
+    <div class="container">
+        <div class="exam">
+            <table>
+                <td>Login</td>
+                <td style="background-color: #9aa0a6">register</td>
+            </table>
             <div class="content">
                 <form name="loginform">
                     <div class="email">
                         <p>Email</p>
-                        <p>example@email.com</p>
+                        <p style="text-decoration: underline line ;">example@email.com</p>
                     </div>
                     <div class="password">
                         <p>password</p>
                         <p>**********</p>
 
                     </div>
-                    <div class="forgotsigin">
-                        <div>forgot password?</div>
-                        <button onclick="return validateLogin();">sigin</button>
+                    <table class="forgotsigin">
+                        <td>forgot password?</td>
+                        <td>
+                            <button onclick="#">sigin</button>
+                        </td>
+                    </table>
+                    <div>
+                        <img src="image/307992889_1114984489135461_2027020154826220776_n.png">
+                    </div>
+                    <div>
+                        <img src="image/unknown.png">
                     </div>
                 </form>
             </div>
         </div>
-        </form>
     </div>
-</div>
-</div>
 </div>
 <script type="text/javascript" src="exam.js"></script>
 
