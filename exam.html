@@ -7,42 +7,38 @@
     <link rel="stylesheet" href="css/exam.css"/>
 </head>
 <body>
-<div class="baoquat">
-    <div class="container">
-        <div class="exam">
-            <table>
-                <td>Login</td>
-                <td style="background-color: #9aa0a6">register</td>
-            </table>
-            <div class="content">
-                <form name="loginform">
-                    <div class="email">
-                        <p>Email</p>
-                        <p style="text-decoration: underline line ;">example@email.com</p>
-                    </div>
-                    <div class="password">
-                        <p>password</p>
-                        <p>**********</p>
-
-                    </div>
-                    <table class="forgotsigin">
-                        <td>forgot password?</td>
-                        <td>
-                            <button onclick="#">sigin</button>
-                        </td>
-                    </table>
-                    <div>
-                        <img src="image/307992889_1114984489135461_2027020154826220776_n.png">
-                    </div>
-                    <div>
-                        <img src="image/unknown.png">
-                    </div>
-                </form>
-            </div>
-        </div>
+<div class="row g-3">
+    <div>
+        <a  href="https://usa.visa.com/"><img src="image/v-and-AM.jpg" width="30%"> </a>
+        <a  href="https://www.paypal.com/vn/home"><img src="image/068BjcjwBw0snwHIq0KNo5m-15.webp" width="30%"></a>
     </div>
 </div>
-<script type="text/javascript" src="exam.js"></script>
-
+<div class="mb-3">
+    <label class="nameoncard">Name on card</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="John smith">
+</div>
+<div class="row">
+    <div class="col">
+        <div>
+            Card number
+        </div>
+        <input type="text" class="form-control" placeholder="**** ***** ***">
+    </div>
+    <div class="col">
+        <div>
+            CVV
+        </div>
+        <input type="text" class="form-control" placeholder="***">
+    </div>
+</div>
+<div class="mb-3">
+    <label class="nameoncard">Expiration Date</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="MM/YY">
+</div>
+<div class="row">
+    <div class="col">
+        <button class="MakeAPayment">Make A Payment</button>
+    </div>
+    <script type="text/javascript" src="exam.js"></script>
 </body>
 </html>

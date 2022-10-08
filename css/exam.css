@@ -1,24 +1,23 @@
-.forgotsigin{
-    text-align: center;
-}
-.exam{
-    text-align: left;
-}
-.table.td{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     text-align: center;
 }
 
-.container{
-    background-color: white;
-    text-align: center;
-    box-sizing: border-box;
-    padding-top: 30px;
-    padding-bottom: 30px;
+.nameoncard {
+    float: left;
 }
-.baoquat{
-    background-color: forestgreen;
+
+.row g-3 {
+    width: 40%;
+    height: 100%;
+    display: flex;
 }
-button {
-    background-color: forestgreen;
-    border-color: white;
+
+.MakeAPayment {
+    float: left;
+    background-color: orangered;
+    border-color: orangered;
+    color: white;
 }
